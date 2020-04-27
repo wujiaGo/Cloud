@@ -1,0 +1,14 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: eureka-client-user-service
+eureka:
+  client:
+#    registerWithEureka: false
+#    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://wujia:123456@eureka7001.com:7001/eureka/
+  instance:
+    #自定义转跳连接
+    status-page-url-path: http://www.wujia.com
