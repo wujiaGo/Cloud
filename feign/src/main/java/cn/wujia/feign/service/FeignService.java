@@ -9,4 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface FeignService {
     @GetMapping("/Ribbon/test")
     public String ribbonTest();
+
+    @GetMapping("/feign/timeout")
+    public String paymentFeignTimeout();
 }

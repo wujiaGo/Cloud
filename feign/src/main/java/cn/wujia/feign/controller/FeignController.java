@@ -16,4 +16,10 @@ public class FeignController {
     public String getDate() {
         return feignService.ribbonTest();
     }
+
+    @GetMapping("/feign/timeout")
+    public String paymentFeignTimeout() {
+        //openfeign-ribbon，客户端一般默认等待1秒钟
+        return feignService.paymentFeignTimeout();
+    }
 }
