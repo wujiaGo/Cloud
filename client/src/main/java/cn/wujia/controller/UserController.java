@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.concurrent.TimeUnit;
+
 @RestController
 public class UserController {
     @Value("${server.port}")
@@ -25,5 +27,15 @@ public class UserController {
     @GetMapping("/article/callhello")
     public String callHello() {
         return restTemplate.getForObject("http://localhost:8761/eureka/", String.class);
+    }
+
+    @GetMapping("/feign/timeout")
+    public String paymentFeignTimeout() {
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return port;
     }
 }
