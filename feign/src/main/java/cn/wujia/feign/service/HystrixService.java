@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @Component
-@FeignClient(value = "EUREKA-HYSTRIX-SERVICE")
+@FeignClient(value = "EUREKA-HYSTRIX-SERVICE",
+        //单个方法处理
+         fallback = HystrixServiceImpl.class)
 public interface HystrixService {
     @GetMapping("/PaymentInfo/{id}")
     public String PaymentInfo(@PathVariable("id") Integer id);

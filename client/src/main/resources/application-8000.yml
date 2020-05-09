@@ -2,7 +2,7 @@ server:
   port: 8000
 spring:
   application:
-    name: eureka-client-user-service
+      name: eureka-client-user-service
 eureka:
   client:
 #    registerWithEureka: false
