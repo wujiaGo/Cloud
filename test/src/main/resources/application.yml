@@ -1,13 +1,19 @@
 server:
   port: 8082
 spring:
+  sleuth:
+    sampler:
+      probability: 1.0
   application:
     name: eureka-client-user-service2
-#eureka:
-#  client:
-#    serviceUrl:
-#      defaultZone: http://wujia:123456@localhost:8761/eureka/
+  zipkin:
+    service:
+      name: sleuth-test
+    base-url: http://127.0.0.1:9411
+
 eureka:
   client:
-    fetch-registry: false
-    register-with-eureka: false
+    #    fetch-registry: false
+    #    register-with-eureka: false
+    serviceUrl:
+      defaultZone: http://wujia:123456@eureka7000.com:7000/eureka/

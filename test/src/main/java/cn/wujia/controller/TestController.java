@@ -42,4 +42,9 @@ public class TestController {
         return restTemplate.postForObject("http://localhost:8084/house/data/post",
                 user, String.class);
     }
+
+    @GetMapping("/sleuth/test")
+    public String sleuthTest() {
+        return "yes";
+    }
 }
