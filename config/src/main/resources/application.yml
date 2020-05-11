@@ -1,0 +1,23 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          #uri: git@github.com:wujiaGo/Cloud.git #路径
+          search-paths:
+            - Cloud #哪里
+          username: wujiaGo
+          password: ww513248
+          uri: https://github.com/wujiaGo/Cloud.git
+          force-pull: true #强制拉入Git存储库
+      label: master #分之
+eureka:
+  client:
+    #    registerWithEureka: false
+    #    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://wujia:123456@eureka7000.com:7000/eureka/

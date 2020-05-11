@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>hystrix</module>
+        <module>config</module>
     </modules>
     <groupId>cn.wujia</groupId>
     <artifactId>cloud</artifactId>
