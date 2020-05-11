@@ -1,1 +1,2 @@
-ssss
+server:
+  port: 3344
