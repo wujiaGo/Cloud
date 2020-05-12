@@ -6,14 +6,15 @@ spring:
       probability: 1.0
   application:
     name: eureka-client-user-service2
-  zipkin:
-    service:
-      name: sleuth-test
-    base-url: http://127.0.0.1:9411
+  #zipkin:
+   # service:
+   #  name: sleuth-test
+   #     base-url: http://127.0.0.1:9411
 
-eureka:
-  client:
-    #    fetch-registry: false
-    #    register-with-eureka: false
-    serviceUrl:
-      defaultZone: http://wujia:123456@eureka7000.com:7000/eureka/
+
+#eureka:
+#  client:
+#        fetch-registry: false
+#        register-with-eureka: false
+#    serviceUrl:
+#      defaultZone: http://wujia:123456@eureka7000.com:7000/eureka/

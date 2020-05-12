@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      label: master #分之
+      name: config #文件名称
+      uri: http://127.0.0.1:3344  #地址
+      profile: dev #环境
