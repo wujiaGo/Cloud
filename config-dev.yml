@@ -1,1 +1,2 @@
-name: wujia
+notify_url: http://t54845.natappfree.cc/api/alipay/notify
+return_url: http://t54845.natappfree.cc/api/alipay/return
