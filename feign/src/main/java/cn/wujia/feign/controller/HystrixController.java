@@ -34,7 +34,7 @@ public class HystrixController {
     }
 
     public String fobake(@PathVariable("id") Integer id){
-        return "80端口:fobake";
+        return "80端口:forbake";
     }
 
 }

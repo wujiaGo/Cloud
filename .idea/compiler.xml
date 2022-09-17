@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hystrix" />
+        <module name="client" />
+        <module name="test" />
+        <module name="feign" />
+        <module name="eureka" />
+        <module name="ribbon-cloud" />
+        <module name="sleuth" />
+        <module name="ribbon" />
+        <module name="config" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="client" target="1.8" />
+      <module name="cloud" target="1.5" />
+      <module name="config" target="1.8" />
+      <module name="eureka" target="1.8" />
+      <module name="feign" target="1.8" />
+      <module name="hystrix" target="1.8" />
+      <module name="ribbon" target="1.8" />
+      <module name="ribbon-cloud" target="1.8" />
+      <module name="sleuth" target="1.8" />
+      <module name="test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="client" options="-parameters" />
+      <module name="config" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="feign" options="-parameters" />
+      <module name="hystrix" options="-parameters" />
+      <module name="ribbon" options="-parameters" />
+      <module name="ribbon-cloud" options="-parameters" />
+      <module name="sleuth" options="-parameters" />
+      <module name="test" options="-parameters" />
+    </option>
+  </component>
+</project>
